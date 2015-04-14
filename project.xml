@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<!-- NMML reference: https://gist.github.com/1763850 -->
+	
+	<!-- metadata, make sure 'package' is at least 3 segments (ie. com.mycompany.myproject) -->
+	<meta title="Autizm" package="com.luchanso.autizm.Autizm" version="1.0.0" company="Loutchansky Oleg" />
+	
+	<!-- output -->
+	<app main="com.luchanso.autizm.Main" file="Autizm" path="bin" />
+	
+	<window background="#FFFFFF" fps="60" />
+	<window width="1000" height="600" unless="mobile" />
+	<window orientation="landscape" vsync="false" antialiasing="0" if="cpp" />
+	
+	<!-- classpath, haxe libs -->
+	<source path="src" />
+	<haxelib name="openfl" />
+	<haxelib name="actuate" />
+	<haxelib name="svg" />
+	
+	<!-- assets -->
+	<assets path="assets/vector" rename="vector" />
+	<assets path="assets/img" rename="img" />
+	
+	<!-- optimize output
+	<haxeflag name="-dce full" /> -->
+	
+</project>
